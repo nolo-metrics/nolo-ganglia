@@ -1,0 +1,19 @@
+Source: nolo-ganglia
+Maintainer: pkg-go <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Joseph Anthony Pasquale Holsten <joseph@josephholsten.com>
+Section: libs
+Priority: optional
+Build-Depends: debhelper (>= 9.0.0),
+               dh-golang,
+               golang-go
+Standards-Version: 3.9.5
+Homepage: https://github.com/nolo-metrics/nolo-ganglia
+Vcs-Browser: https://github.com/nolo-metrics/nolo-ganglia
+Vcs-Git: https://github.com/nolo-metrics/nolo-ganglia.git
+
+Package: nolo-ganglia
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends}
+Description: Ganglia adapter for nolo metric plugins
+ nolo-ganglia connects your nolo metric plugins to your existing ganglia infrastructure.
