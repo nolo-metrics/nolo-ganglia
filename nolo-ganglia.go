@@ -4,10 +4,10 @@ import (
 	"github.com/jbuchbinder/go-gmetric/gmetric"
 	"github.com/nolo-metrics/go-nolo"
 	"log"
+	"net"
 	"os"
 	"os/exec"
 	"path/filepath"
-	"net"
 )
 
 func main() {
@@ -36,7 +36,7 @@ func main() {
 		Host:  host,
 		Spoof: spoofHost,
 	}
-	gm.AddServer(gmetric.GmetricServer{gIP, gangliaPort})
+	gm.AddServer(gmetric.Server{gIP, gangliaPort})
 
 	for _, metric := range plugin.Metrics {
 		m_name := metric.Identifier
