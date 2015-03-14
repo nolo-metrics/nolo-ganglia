@@ -14,7 +14,7 @@ Please note: the ganglia adapter does not yet support any metadata flags, so it 
 Installation
 ============
 
-At the moment, this metric sink does not have lovely packaging. To install, you'll need to install the go development environment, then run:
+At the moment, this metric sink does not have lovely packaging. To install, you'll need to install git and the go development environment, then run:
 
     go get github.com/nolo-metrics/nolo-ganglia
 
